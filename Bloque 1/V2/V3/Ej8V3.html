@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aprobado(nota1, nota2, nota3){
+            if ((nota1+nota2+nota3)/3>=4)
+        {
+            return "Aprobado"
+        } else
+            {
+                return "Reprobado"
+            } 
+        }
+        nota1=parseInt(prompt("Introduzca la primera nota"));
+        nota2=parseInt(prompt("Introduzca la segunda nota"));
+        nota3=parseInt(prompt("Introduzca la tercera nota"));
+        let resultado=aprobado(nota1, nota2, nota3);
+        document.write(resultado);
+    </script>
+</body>
+</html>

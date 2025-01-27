@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let precio, cantidad;
+        precio=parseInt(prompt("Introduzca el precio del producto"));
+        cantidad=parseInt(prompt("Introduzca la cantidad del producto"));
+       
+        function precioCantidad(){
+            return "El precio a pagar es: "+precio*cantidad+ "€";
+        }
+        let resultado=precioCantidad();
+        document.write(resultado)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function digitos(){
+        let numero;
+        numero=parseInt(prompt("Introduzca un número de 1 o 2 dígitos"));
+        if (numero<=9)
+        {
+            return "El número es de 1 dígito"
+        }
+        else
+        {
+            return "El número es de 2 dígitos"
+        }
+    }
+    let resultado=digitos();
+    document.write(resultado);
+    </script>
+</body>
+</html>

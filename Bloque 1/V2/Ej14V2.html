@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sueldo(){
+        let sueldo, antig, aumento, total;
+        sueldo=parseInt(prompt("Introduzca el sueldo"));
+        antig=parseInt(prompt("Introduzca la antigüedad"));
+        if (sueldo<500 && antig>=10)
+        {
+            aumento=sueldo*20/100
+            total=sueldo+aumento
+            return"Su nuevo sueldo será "+total+" €"
+        } else
+            {
+                if (sueldo<500 && antig<10)
+                {
+                    aumento=sueldo*5/100
+                    total=sueldo+aumento
+                    return"Su nuevo sueldo será "+total+" €"
+                } else 
+                    {
+                        return"Su sueldo es: "+sueldo
+                    }
+            }
+        }
+        let resultado=sueldo();
+        document.write(resultado);
+    </script>
+</body>
+</html>
